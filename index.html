@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Inventory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="contains">
+    <section class="search-section">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search Products...">
+      </div>
+
+      <div class="right-box">
+        <div class="sort-box">
+          <input list="sortList" id="sort" placeholder="Sort By Price" class="dropdown">
+          <datalist id="sortList">
+            <option value="Price : Low to High">
+            <option value="Price : High to Low">
+          </datalist>
+        </div>
+
+        <button class="add-btn" id="openAddBtn">
+          <i class="fa-solid fa-plus"></i> Add Product
+        </button>
+      </div>
+    </section>
+
+    <div class="page-head" style="display:none;">
+      <div class="eyebrow">Stock Ledger</div>
+      <h1>Product Inventory</h1>
+      <div class="count" id="countLabel"></div>
+    </div>
+
+    <div class="wrapper">
+      <main class="grid" id="grid"></main>
+      <div class="empty" id="emptyState" style="display:none;">
+        <div class="stub">+</div>
+        <h3>No products yet</h3>
+        <p>Click "Add Product" above to create your first product.</p>
+      </div>
+    </div>
+
+    <div class="overlay" id="formOverlay">
+      <div class="ticket">
+        <button class="close-x" id="closeFormBtn"><i class="fa-solid fa-xmark"></i></button>
+        <h2><span class="dot"></span><span id="formTitle">New Product</span></h2>
+
+        <label for="titleInput">Title</label>
+        <input id="titleInput" type="text">
+        <div class="field-error" id="titleError">Title is required.</div>
+
+        <label for="priceInput">Price</label>
+        <input id="priceInput" type="number">
+        <div class="field-error" id="priceError">Enter a valid price greater than 0.</div>
+
+        <label for="imageInput">Image URL</label>
+        <input id="imageInput" type="text">
+
+        <div class="btn-row">
+          <button class="btn-primary" id="saveBtn">Add Product</button>
+          <button class="btn-ghost" id="cancelBtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
