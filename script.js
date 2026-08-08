@@ -57,7 +57,7 @@ var SEED_PRODUCTS = [
         id: "10",
         title: "Water Bottle",
         price: 14.99,
-        image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSRrWk2gCpQnjcMf1w5kLV83cLsSxx_WOU2e15fW_jPnDn79kLnkSoPorkenAoWe-t6mrWU5OiBtSZPRzW2rHXnkVpl-XJFIFhUMJtElNgGrCmILIPHTvcoyA"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzp_e9yxpp4sAXmLRgWyklx6SWHuiB3KO6NOR0zUNLg&s=10"
     }
 ];
 

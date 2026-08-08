@@ -156,7 +156,8 @@ main.grid {
 
 .tag-card {
     overflow: hidden;
-    padding: 14px;
+    padding: 30px;
+    height:100%;
     background: #fff;
     border: 1px solid #e5e7eb;
     border-radius: 13px;
@@ -173,7 +174,7 @@ main.grid {
 .tag-card img {
     width: 100%;
     height: 180px;
-    object-fit: contain;
+    object-fit: cover;
     background: #f3f4f6;
     border-radius: 10px;
     display: block;
